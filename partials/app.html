@@ -1,0 +1,29 @@
+<div class="card search">
+  <h1 class="search-headline">Pets Directory</h1>
+  <label class="search-label">Search pet:
+    <span *ngIf="name"
+      [innerHTML]="name">
+    </span>
+  </label>
+  <!-- #newPet will be a temporary variable available in the methods.
+    ngModel tracks the event and also change the value of the input element -->
+  <input class="search-input"
+    #newPet
+    [(ngModel)]="name"
+    (keyup.enter)="addPet(newPet.value); newPet.value=''">
+  <button class="btn"
+    (click)="addPet(newPet.value); newPet.value=''">
+    Add pet
+  </button>
+</div>
+
+<ul class="petlist cf">
+  <li class="petlist-item cf"
+    #petContainer
+    (click)="onClick(item, petContainer)"
+    *ngFor="let item of pets">
+    <!-- *ngFor store each item of an array in a variable temporarily -->
+    <h2 class="pet-name">{{ item.name }}</h2>
+    <h3 class="pet-reknown">Age: {{ item.age }}</h3>
+  </li>
+</ul>

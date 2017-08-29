@@ -2,6 +2,7 @@
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './component.app';
 
 
@@ -11,7 +12,7 @@ import { AppComponent } from './component.app';
 @NgModule({
   // modules that the app needs, features
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   // view classes that belong to this module
   // all modules that exist within the app
