@@ -17,7 +17,8 @@
   margin-bottom: 10px;
 }
 
-.search .search-label {
+.search .search-label,
+.add-label {
   font-weight: 400;
   font-size: 1rem;
   text-align: left;
