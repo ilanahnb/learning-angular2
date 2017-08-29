@@ -1,6 +1,9 @@
 // starting point for the app
 
 import { Component } from '@angular/core';
+import { PetItemComponent } from './component.pet-item';
+import { PetDetailsComponent } from './component.pet-details';
+
 
 export class Pet {
   name: string;
@@ -22,6 +25,10 @@ export class Pet {
 export class AppComponent {
   pets = PETS;
   currentPet: Pet;
+
+  showPet(item) {
+    this.currentPet = item;
+  }
 
   addPet(value) {
     if (value!=='') {

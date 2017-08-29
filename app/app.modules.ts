@@ -3,7 +3,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './component.app';
+import { PetItemComponent } from './component.pet-item';
+import { PetDetailsComponent } from './component.pet-details';
 
 
 // NgModule decorator
@@ -17,7 +20,7 @@ import { AppComponent } from './component.app';
   // view classes that belong to this module
   // all modules that exist within the app
   declarations: [
-    AppComponent
+    AppComponent, PetItemComponent, PetDetailsComponent
   ],
   // bootstrap component (root component) that has the other components
   bootstrap: [

@@ -1,0 +1,27 @@
+/* ---------------------- */
+/* pet-item.css Styles */
+/* ---------------------- */
+
+.pet-img {
+  width: 60px;
+  border-radius: 12px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.pet-info {
+  display: block;
+  margin: 5px 0;
+}
+
+.pet-info .pet-name {
+  font-size: 1.4rem;
+  margin-top: 0;
+}
+
+.pet-info .pet-reknown {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 0;
+}

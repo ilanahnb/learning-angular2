@@ -23,16 +23,19 @@
   </button>
 </div>
 
-<ul class="petlist cf">
+<ul class="petlist cf"
+  *ngIf="query">
   <li class="petlist-item cf"
+    (click)="showPet(item); query=''"
     *ngFor="let item of pets">
     <!-- *ngFor store each item of an array in a variable temporarily -->
-    <img class="pet-img"
-         src="images/{{item.shortname}}_tn.jpg"
-         alt="{{item.name}} photo"/>
-    <div class="pet-info">
-      <h2 class="pet-name">{{item.name}}</h2>
-      <h3 class="pet-reknown">Age: {{item.age}}</h3>
-    </div>
+    <pet-item class="content"
+      [pet]=item>
+    </pet-item>
   </li>
 </ul>
+
+<pet-details class="content"
+  *ngIf="currentPet"
+  [pet]=currentPet>
+</pet-details>
