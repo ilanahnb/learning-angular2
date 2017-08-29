@@ -27,7 +27,7 @@
   *ngIf="query">
   <li class="petlist-item cf"
     (click)="showPet(item); query=''"
-    *ngFor="let item of pets">
+    *ngFor="let item of (pets | search: query)">
     <!-- *ngFor store each item of an array in a variable temporarily -->
     <pet-item class="content"
       [pet]=item>

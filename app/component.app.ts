@@ -8,7 +8,8 @@ import { PetDetailsComponent } from './component.pet-details';
 export class Pet {
   name: string;
   shortname: string;
-  age: string;
+  owner: string;
+  age: number;
   bio: string
 }
 
@@ -35,7 +36,8 @@ export class AppComponent {
       this.pets.push({
         name: value,
         shortname: 'Pet_Avatar',
-        age: '',
+        owner: 'Unknown',
+        age: 0,
         bio: ''
       });
     }
@@ -47,22 +49,26 @@ var PETS: Pet[] = [
   {
     "name":"Panqueca",
     "shortname":"Panqueca",
-    "age":"7 years",
-    "bio":"Barot has just finished his final year at The Royal Academy of Painting and Sculpture, where he excelled in glass etching paintings and portraiture. Hailed as one of the most diverse artists of his generation, Barot is equally as skilled with watercolors as he is with oils, and is just as well-balanced in different subject areas. Barot's collection entitled \"The Un-Collection\" will adorn the walls of Gilbert Hall, depicting his range of skills and sensibilities - all of them, uniquely Barot, yet undeniably different"
+    "owner":"Ilana",
+    "age":7,
+    "bio":"Spicy jalapeno bacon ipsum dolor amet corned beef ut ham hock ball tip prosciutto turkey cow rump sint tail. Ad burgdoggen excepteur reprehenderit velit meatball eu et. Tenderloin salami minim duis capicola ea laboris t-bone. Prosciutto pancetta chuck short loin, flank irure biltong aute burgdoggen short ribs eu ut qui ball tip frankfurter. Tri-tip aute deserunt turkey, in shankle pork ham et ad cow swine veniam corned beef."
   }, {
     "name":"Jello",
     "shortname":"Jello",
-    "age":"2 years",
-    "bio":"The Artist to Watch in 2012 by the London Review, Johnathan has already sold one of the highest priced-commissions paid to an art student, ever on record. The piece, entitled Gratitude Resort, a work in oil and mixed media, was sold for $750,000 and Jonathan donated all the proceeds to Art for Peace, an organization that provides college art scholarships for creative children in developing nations"
+    "owner":"Ilana",
+    "age":2,
+    "bio":"Bacon ipsum dolor amet kevin jerky rump hamburger ground round shank t-bone prosciutto biltong filet mignon jowl porchetta brisket spare ribs. Fatback tongue shank pork belly, tail prosciutto tenderloin. Drumstick sausage doner kevin ball tip burgdoggen shankle pastrami hamburger cupim turducken pig. Leberkas filet mignon picanha, corned beef andouille meatloaf hamburger pork loin tail venison fatback. Kevin tenderloin capicola, cow prosciutto boudin spare ribs tail jerky tongue kielbasa chuck. Shoulder kielbasa tenderloin ball tip jerky. Biltong meatball beef ribs, shank beef sirloin pork loin meatloaf pork belly."
   }, {
     "name":"Quindim",
     "shortname":"Quindim",
-    "age":"2 years",
-    "bio":"Hillary is a sophomore art sculpture student at New York University, and has already won all the major international prizes for new sculptors, including the Divinity Circle, the International Sculptor's Medal, and the Academy of Paris Award. Hillary's CAC exhibit features 25 abstract watercolor paintings that contain only water images including waves, deep sea, and river."
+    "owner":"Luara",
+    "age":2,
+    "bio":"Spicy jalapeno tri-tip frankfurter hamburger doner shankle strip steak alcatra rump flank jowl meatloaf landjaeger swine. Kevin turkey pork belly prosciutto, biltong ham hock landjaeger turducken jowl bacon chuck. Rump kielbasa short ribs biltong flank landjaeger pork filet mignon pork loin tail ham. Cupim corned beef brisket, pig andouille tongue drumstick meatloaf short loin alcatra ball tip venison flank pork landjaeger. Shankle venison shank alcatra meatball ham. Cow pork loin tongue, ribeye pastrami bacon burgdoggen pork shank jowl pancetta fatback cupim chuck. Alcatra meatball porchetta, frankfurter spare ribs pork chop boudin tenderloin shankle kevin."
   }, {
     "name":"Doge",
     "shortname":"Doge",
-    "age":"99 years",
-    "bio":"The Art College in New Dehli has sponsored Hassum on scholarship for his entire undergraduate career at the university, seeing great promise in his contemporary paintings of landscapes - that use equal parts muted and vibrant tones, and are almost a contradiction in art. Hassum will be speaking on \"The use and absence of color in modern art\" during Thursday's agenda."
+    "owner":"Meme",
+    "age":99,
+    "bio":"Bacon ipsum dolor amet pastrami ground round tri-tip, burgdoggen nostrud rump eiusmod laboris. Ipsum landjaeger pork loin nisi, meatloaf voluptate pork chop qui ex pig. Mollit aliqua shankle ut culpa reprehenderit. Fatback veniam leberkas reprehenderit picanha nostrud voluptate boudin id, turducken velit jerky meatloaf. Consequat strip steak shankle nisi reprehenderit irure, kevin meatball sunt burgdoggen."
   }
 ]

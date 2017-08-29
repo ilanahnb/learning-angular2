@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './component.app';
 import { PetItemComponent } from './component.pet-item';
 import { PetDetailsComponent } from './component.pet-details';
+import { SearchPipe } from './pipe.search';
 
 
 // NgModule decorator
@@ -20,7 +21,7 @@ import { PetDetailsComponent } from './component.pet-details';
   // view classes that belong to this module
   // all modules that exist within the app
   declarations: [
-    AppComponent, PetItemComponent, PetDetailsComponent
+    AppComponent, PetItemComponent, PetDetailsComponent, SearchPipe
   ],
   // bootstrap component (root component) that has the other components
   bootstrap: [
