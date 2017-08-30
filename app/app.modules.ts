@@ -9,6 +9,8 @@ import { PetItemComponent } from './component.pet-item';
 import { PetDetailsComponent } from './component.pet-details';
 import { PetAddComponent } from './component.pet-add';
 import { SearchPipe } from './pipe.search';
+import { CategoryPipe } from './pipe.category-list';
+
 
 
 // NgModule decorator
@@ -26,7 +28,8 @@ import { SearchPipe } from './pipe.search';
     PetItemComponent,
     PetDetailsComponent,
     PetAddComponent,
-    SearchPipe
+    SearchPipe,
+    CategoryPipe
   ],
   // Root module. Component(s) that will be the starting point for the Bootstrap process
   bootstrap: [

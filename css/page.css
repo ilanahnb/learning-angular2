@@ -115,9 +115,9 @@ a.small {
 
 .btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 5px 10px;
     margin-bottom: 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 140%;
     text-align: center;
     text-decoration: none;
@@ -142,6 +142,15 @@ a.small {
 
 .btn:hover {
   background: #DF7A47;
+}
+
+.btn-small {
+  font-size: .9rem;
+  padding: 2px 8px;
+}
+
+.btn-group {
+  text-align: right;
 }
 
 .card {

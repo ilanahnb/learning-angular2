@@ -77,3 +77,20 @@
 .petlist-item:last-child  {
     border-bottom:none;
 }
+
+
+.pet-events {
+  max-width: 850px;
+}
+
+article {
+  padding: 10px;
+  border-bottom: 1px solid #999;
+}
+
+article.event-appointment {
+  border-left: 3px solid #53ace4;
+}
+article.event-grooming {
+  border-left: 3px solid #45bf94;
+}

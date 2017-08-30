@@ -14,6 +14,13 @@ export class Pet {
   bio: string
 }
 
+export class Event {
+  title: string;
+  category: string;
+  pet: string[];
+  date: any;
+}
+
 
 // Component decorator
 @Component({
@@ -28,6 +35,7 @@ export class AppComponent {
   pets = PETS;
   currentPet: Pet;
   openPetForm = false;
+  events = EVENTS;
 
   showPet(item) {
     this.currentPet = item;
@@ -51,7 +59,7 @@ export class AppComponent {
 }
 
 
-var PETS: Pet[] = [
+export var PETS: Pet[] = [
   {
     "name":"Panqueca",
     "shortname":"Panqueca",
@@ -76,5 +84,27 @@ var PETS: Pet[] = [
     "owner":"Meme",
     "age":99,
     "bio":"Bacon ipsum dolor amet pastrami ground round tri-tip, burgdoggen nostrud rump eiusmod laboris. Ipsum landjaeger pork loin nisi, meatloaf voluptate pork chop qui ex pig. Mollit aliqua shankle ut culpa reprehenderit. Fatback veniam leberkas reprehenderit picanha nostrud voluptate boudin id, turducken velit jerky meatloaf. Consequat strip steak shankle nisi reprehenderit irure, kevin meatball sunt burgdoggen."
+  }
+]
+
+
+var EVENTS: Event[] = [
+  {
+    "title": "Vet Appointment",
+    "category": "appointment",
+    "pet": ["Panqueca"],
+    "date": new Date(2017, 10, 1)
+  },
+  {
+    "title": "Brush cats' teeth",
+    "category": "grooming",
+    "pet": ["Panqueca", "Jello"],
+    "date": new Date(2017, 9, 10)
+  },
+  {
+    "title": "Brush Jello",
+    "category": "grooming",
+    "pet": ["Jello"],
+    "date": new Date(2017, 9, 22)
   }
 ]
