@@ -3,6 +3,7 @@
 import { Component } from '@angular/core';
 import { PetItemComponent } from './component.pet-item';
 import { PetDetailsComponent } from './component.pet-details';
+import { PetAddComponent } from './component.pet-add';
 
 
 export class Pet {
@@ -16,7 +17,7 @@ export class Pet {
 
 // Component decorator
 @Component({
-  selector: 'app',  // html tag
+  selector: 'pet-app',  // html tag
   templateUrl: './partials/app.html',
   // this css is only going to be added to the page
   // if this particular component is available or exposed within the app
@@ -26,9 +27,14 @@ export class Pet {
 export class AppComponent {
   pets = PETS;
   currentPet: Pet;
+  openPetForm = false;
 
   showPet(item) {
     this.currentPet = item;
+  }
+
+  showAddPetForm() {
+    this.openPetForm = !this.openPetForm;
   }
 
   addPet(value) {

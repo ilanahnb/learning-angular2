@@ -1,0 +1,14 @@
+<section class="card pet-details">
+  <h2>Add pet</h2>
+  <label class="add-label">Name:</label>
+  <!-- #newPet will be a temporary variable available in the methods.
+    ngModel tracks the event and also change the value of the input element -->
+  <input class="search-input"
+    #newPet
+    [(ngModel)]="name"
+    (keyup.enter)="addPet(newPet.value); newPet.value=''">
+  <button class="btn"
+    (click)="addPet(newPet.value); newPet.value=''">
+    Add pet
+  </button>
+</section>
